@@ -1,13 +1,18 @@
 import axios from 'axios';
 
 // API base configuration
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8080';
+const API_BASE_URL = process.env.REACT_APP_API_URL;
+const API_KEY = process.env.REACT_APP_API_KEY;
+
+if (!API_BASE_URL || !API_KEY) {
+  throw new Error("Missing environment variables REACT_APP_API_URL or REACT_APP_API_KEY");
+}
 
 const api = axios.create({
   baseURL: API_BASE_URL,
   headers: {
     'Content-Type': 'application/json',
-    'X-API-KEY': process.env.REACT_APP_API_KEY || 'pFYuSfBn1Iw2XBlN-CAokQn',
+    'X-API-KEY': API_KEY,
   },
 });
 
