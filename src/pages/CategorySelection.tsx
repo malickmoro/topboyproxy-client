@@ -111,7 +111,7 @@ const CategorySelection: React.FC = () => {
           {/* PIA Logo */}
           <div className="mb-6">
             <img 
-              src="/pia.jpg" 
+              src="/pia.png" 
               alt="PIA - Private Internet Access" 
               className="mx-auto h-16 w-auto object-contain"
             />
