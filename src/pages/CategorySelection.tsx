@@ -108,6 +108,15 @@ const CategorySelection: React.FC = () => {
       <div className="max-w-md mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
+          {/* PIA Logo */}
+          <div className="mb-6">
+            <img 
+              src="/pia.jpg" 
+              alt="PIA - Private Internet Access" 
+              className="mx-auto h-16 w-auto object-contain"
+            />
+          </div>
+          
           <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">
             Select Proxy Category
           </h1>

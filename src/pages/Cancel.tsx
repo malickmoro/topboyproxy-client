@@ -11,6 +11,15 @@ const Cancel: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-8 px-4">
       <div className="max-w-md mx-auto">
+        {/* PIA Logo */}
+        <div className="mb-6">
+          <img 
+            src="/pia.jpg" 
+            alt="PIA - Private Internet Access" 
+            className="mx-auto h-16 w-auto object-contain"
+          />
+        </div>
+        
         {/* Cancel Icon */}
         <div className="text-center mb-8">
           <div className="mx-auto w-20 h-20 bg-error-100 dark:bg-error-900 rounded-full flex items-center justify-center mb-6">
