@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 // API base configuration
-const API_BASE_URL = process.env.REACT_APP_API_URL;
-const API_KEY = process.env.REACT_APP_API_KEY;
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://topboyproxy-backend-d7f79039f73a.herokuapp.com';
+const API_KEY = process.env.REACT_APP_API_KEY || 'pFYuSfBn1Iw2XBlN-CAokQn';
 
 if (!API_BASE_URL || !API_KEY) {
   throw new Error("Missing environment variables REACT_APP_API_URL or REACT_APP_API_KEY");
@@ -30,7 +30,8 @@ export interface InvoiceRequest {
   phoneNumber: string;
 }
 
-export interface PaymentLinkResponse {
+// Hubtel response structure
+export interface HubtelPaymentResponse {
   responseCode: string;
   status: string;
   data: {
@@ -41,6 +42,19 @@ export interface PaymentLinkResponse {
     checkoutDirectUrl: string;
   };
 }
+
+// Redde response structure
+export interface ReddePaymentResponse {
+  status: string;
+  reason: string;
+  referenceid: string;
+  responsetoken: string;
+  checkouturl: string;
+  checkouttransid: string;
+}
+
+// Union type for both payment responses
+export type PaymentResponse = HubtelPaymentResponse | ReddePaymentResponse;
 
 // Always use real API - no mock data
 const useMockApi = false;
@@ -59,9 +73,9 @@ export const apiService = {
   },
 
   // Generate invoice and get payment link
-  generateInvoice: async (data: InvoiceRequest): Promise<PaymentLinkResponse> => {
+  generateInvoice: async (data: InvoiceRequest, type: 'hubtel' | 'redde'): Promise<PaymentResponse> => {
     try {
-      const response = await api.post('/api/client/generate-invoice', data);
+      const response = await api.post(`/api/client/${type}/checkout`, data);
       return response.data;
     } catch (error) {
       console.error('Error generating invoice:', error);

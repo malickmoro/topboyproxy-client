@@ -1,4 +1,4 @@
-import { ProxyCategory, InvoiceRequest, PaymentLinkResponse } from './api';
+import { ProxyCategory, InvoiceRequest, HubtelPaymentResponse } from './api';
 
 // Mock data for proxy categories
 const mockCategories: ProxyCategory[] = [
@@ -34,7 +34,7 @@ export const mockApiService = {
   },
 
   // Generate invoice and get payment link
-  generateInvoice: async (data: InvoiceRequest): Promise<PaymentLinkResponse> => {
+  generateInvoice: async (data: InvoiceRequest): Promise<HubtelPaymentResponse> => {
     // Simulate network delay
     await delay(1500);
     
