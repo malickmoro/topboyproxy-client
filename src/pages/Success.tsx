@@ -102,6 +102,10 @@ const Success: React.FC = () => {
             <a href="mailto:support@topboy.com" className="text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300">
               support@topboyproxy.com
             </a>
+            {' '}or call{' '}
+            <a href="tel:+233508055245" className="text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300">
+              +233508055245
+            </a>
           </p>
         </div>
       </div>

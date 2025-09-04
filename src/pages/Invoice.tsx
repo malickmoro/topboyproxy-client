@@ -185,9 +185,7 @@ const Invoice: React.FC = () => {
       if (selectedPaymentMethod === 'hubtel') {
         checkoutUrl = (response as HubtelPaymentResponse).data.checkoutUrl;
       } else {
-        // checkoutUrl = (response as ReddePaymentResponse).checkouturl;
-        // Temporarily disabled Redde
-        throw new Error('Redde payments are temporarily unavailable');
+        checkoutUrl = (response as ReddePaymentResponse).checkouturl;
       }
 
       // Redirect to payment page
@@ -368,7 +366,6 @@ const Invoice: React.FC = () => {
               </div>
             </label>
             
-            {/* Temporarily disabled Redde payment method
             <label className={`flex items-center p-3 border rounded-lg cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors ${
               selectedPaymentMethod === 'redde' 
                 ? 'border-primary-500 bg-primary-50 dark:bg-primary-900/20' 
@@ -395,7 +392,6 @@ const Invoice: React.FC = () => {
                 </div>
               </div>
             </label>
-            */}
           </div>
         </div>
 
