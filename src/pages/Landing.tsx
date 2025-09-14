@@ -221,71 +221,67 @@ const Landing: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-              How to Purchase Proxy Codes
+              How to Purchase & Use Proxy Codes
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Watch our tutorial video to learn how to purchase and use proxy codes
+              Watch our tutorial videos to learn how to purchase and top up your PIA Proxy codes
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto">
-            <div className="card">
-              <div className="aspect-video bg-gray-200 dark:bg-gray-700 rounded-lg mb-6">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/C41hxe6NAKY"
-                  title="How to Purchase Proxy Codes - Tutorial"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  className="rounded-lg"
-                ></iframe>
-              </div>
-              
-              <div className="text-center">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
-                  Step-by-Step Purchase Guide
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* How to Purchase Video */}
+              <div className="card">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4 text-center">
+                  How to Purchase Codes
                 </h3>
-                <div className="grid md:grid-cols-3 gap-6 text-left">
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 w-8 h-8 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center mr-3">
-                      <span className="text-primary-600 font-semibold">1</span>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Select Category</h4>
-                      <p className="text-gray-600 dark:text-gray-400 text-sm">Choose your preferred proxy category and quantity</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 w-8 h-8 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center mr-3">
-                      <span className="text-primary-600 font-semibold">2</span>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Make Payment</h4>
-                      <p className="text-gray-600 dark:text-gray-400 text-sm">Complete your purchase using our secure payment system</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 w-8 h-8 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center mr-3">
-                      <span className="text-primary-600 font-semibold">3</span>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Get Codes</h4>
-                      <p className="text-gray-600 dark:text-gray-400 text-sm">Receive your proxy codes and start using them immediately</p>
-                    </div>
-                  </div>
+                <div className="aspect-video bg-gray-200 dark:bg-gray-700 rounded-lg mb-4">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/9AKRe9Yv4dA"
+                    title="How to Purchase PIA Proxy Codes"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    className="rounded-lg"
+                  ></iframe>
                 </div>
-                
-                <button
-                  onClick={handleGetStarted}
-                  className="btn-primary mt-8"
-                >
-                  Start Purchasing Now
-                </button>
+                <p className="text-gray-600 dark:text-gray-400 text-sm text-center">
+                  Learn how to purchase PIA Proxy top-up codes through our platform
+                </p>
               </div>
+
+              {/* How to Top Up Video */}
+              <div className="card">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4 text-center">
+                  How to Top Up in Client
+                </h3>
+                <div className="aspect-video bg-gray-200 dark:bg-gray-700 rounded-lg mb-4">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/y5mxr3BtF_I"
+                    title="How to Top Up PIA Proxy in Client"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    className="rounded-lg"
+                  ></iframe>
+                </div>
+                <p className="text-gray-600 dark:text-gray-400 text-sm text-center">
+                  Learn how to use your purchased codes to top up your PIA Proxy client
+                </p>
+              </div>
+            </div>
+            
+            <div className="text-center mt-8">
+              <button
+                onClick={handleGetStarted}
+                className="btn-primary"
+              >
+                Start Purchasing Now
+              </button>
             </div>
           </div>
         </div>
