@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Landing from './pages/Landing';
 import CategorySelection from './pages/CategorySelection';
 import Invoice from './pages/Invoice';
 import Success from './pages/Success';
@@ -10,7 +11,8 @@ function App() {
     <Router>
       <div className="min-h-screen bg-gray-50">
         <Routes>
-          <Route path="/" element={<CategorySelection />} />
+          <Route path="/" element={<Landing />} />
+          <Route path="/categories" element={<CategorySelection />} />
           <Route path="/invoice" element={<Invoice />} />
           <Route path="/success" element={<Success />} />
           <Route path="/cancel" element={<Cancel />} />
