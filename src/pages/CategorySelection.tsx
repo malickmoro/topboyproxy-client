@@ -210,36 +210,36 @@ const CategorySelection: React.FC = () => {
       </div>
 
       {/* Footer */}
-      <footer className="mt-16 py-8 border-t border-gray-200 dark:border-gray-700">
+      <footer className="mt-8 py-4 border-t border-gray-200 dark:border-gray-700">
         <div className="max-w-md mx-auto px-4">
           <div className="text-center">
-            <div className="flex items-center justify-center mb-4">
+            <div className="flex items-center justify-center mb-2">
               <img 
                 src="/pia.jpg" 
                 alt="PIA - Private Internet Access" 
-                className="h-8 w-auto object-contain dark:hidden mr-2"
+                className="h-6 w-auto object-contain dark:hidden mr-2"
               />
               <img 
                 src="/pia.png" 
                 alt="PIA - Private Internet Access" 
-                className="h-8 w-auto object-contain hidden dark:block mr-2"
+                className="h-6 w-auto object-contain hidden dark:block mr-2"
               />
-              <span className="text-lg font-semibold text-gray-900 dark:text-gray-100">
+              <span className="text-sm font-semibold text-gray-900 dark:text-gray-100">
                 TopBoy Proxy
               </span>
             </div>
             
-            <p className="text-gray-600 dark:text-gray-400 text-sm mb-6">
+            <p className="text-gray-600 dark:text-gray-400 text-xs mb-3">
               Need help? Contact us anytime
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-2 justify-center items-center">
               {/* Phone */}
               <a
                 href="tel:+233508066245"
-                className="flex items-center gap-2 px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg transition-colors duration-200 text-sm font-medium"
+                className="flex items-center gap-1 px-3 py-1.5 bg-green-500 hover:bg-green-600 text-white rounded-lg transition-colors duration-200 text-xs font-medium"
               >
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
                 +233 50 806 6245
@@ -248,16 +248,16 @@ const CategorySelection: React.FC = () => {
               {/* Email */}
               <a
                 href="mailto:support@topboyproxy.com"
-                className="flex items-center gap-2 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors duration-200 text-sm font-medium"
+                className="flex items-center gap-1 px-3 py-1.5 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors duration-200 text-xs font-medium"
               >
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
                 Email
               </a>
             </div>
             
-            <p className="text-gray-500 dark:text-gray-500 text-xs mt-4">
+            <p className="text-gray-500 dark:text-gray-500 text-xs mt-2">
               © 2024 TopBoy Proxy. All rights reserved.
             </p>
           </div>
