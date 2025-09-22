@@ -313,12 +313,12 @@ const Landing: React.FC = () => {
                 Chat with us instantly
               </p>
               <a 
-                href="https://wa.me/233508066245" 
+                href="https://wa.me/233508055245" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-primary-600 hover:text-primary-700 font-semibold"
               >
-                +233 50 806 6245
+                +233 50 805 5245
               </a>
             </div>
 
